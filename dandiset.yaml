@@ -39,18 +39,19 @@ description: "This dataset was collected at the Allen Institute. It includes dat
   but licks for visual changes no longer triggered reward. At the end of the no-reward
   block, auto-rewards were given to indicate that rewards were once again available,
   and many mice resumed licking for changes.\n\nTo better understand how to access
-  and analyze this dataset, we encourage potential users to refer to the following
-  resources. The data in DANDI is structured as follows: each subject has session
-  nwbs identified by date of acquisition. Then, there are LFP NWBs for up to 6 probes
-  for each session, identified by a probe id. There is a dynamic gating sessions metadata
-  table at the GitHub repository below that has an acquisition date column, which
-  can be used to map to a session id that is a column in all the metadata tables.
-  For the LFP, each session NWB has a probes table that has the probe ids for the
-  LFP data associated with a session. Use this table to get the probe ids and corresponding
-  LFP NWBs. Examples  of opening a NWB file and accessing the probes table can be
-  seen at the GitHub below under the tutorials folder:\n\n1) This repository includes
-  a quick-start tutorial notebook as well as metadata tables for the sessions, probes,
-  channels and units included in this dataset: https://github.com/AllenInstitute/SHIELD_Dynamic_Gating_Analysis\n2)
+  and analyze this dataset, we encourage potential users to refer to the resources
+  below. The data in DANDI is structured as follows: each subject has session NWBs
+  identified by date of acquisition. Then, there are LFP NWBs for up to 6 probes for
+  each session, identified by a probe id. For the LFP, each session NWB has a probes
+  table that has the probe ids for the LFP data associated with that session. Use
+  this table to get the probe ids and corresponding LFP NWBs. Examples  of opening
+  a NWB file and accessing the probes table can be seen at the GitHub below under
+  tutorials. In addition, there is a dynamic gating sessions metadata table at the
+  GitHub repository below that has an acquisition date column, which can be used to
+  map to a session id (the session column in the metadata tables). This will be useful
+  for parsing the metadata tables for multi-session analysis.\n\n1) This repository
+  includes a quick-start tutorial notebook as well as metadata tables for the sessions,
+  probes, channels and units included in this dataset: https://github.com/AllenInstitute/SHIELD_Dynamic_Gating_Analysis\n2)
   To learn more about the basic visual change detection task as well as the general
   structure of the nwb files, consult the documentation available for the Allen Observatory
   Visual Behavior Neuropixels dataset here: https://portal.brain-map.org/circuits-behavior/visual-behavior-neuropixels\n\nThis
