@@ -7,12 +7,38 @@ access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
 assetsSummary:
-  numberOfBytes: 0
-  numberOfFiles: 0
+  approach:
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  - name: spike sorting technique
+    schemaKey: MeasurementTechniqueType
+  - name: signal filtering technique
+    schemaKey: MeasurementTechniqueType
+  - name: multi electrode extracellular electrophysiology recording technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 57991655016
+  numberOfFiles: 21
+  numberOfSubjects: 2
   schemaKey: AssetsSummary
-citation: Bennett, Corbett (2024) Large-scale Neuropixels recordings through SHIELD
-  implant during visual change detection task with dynamic gating of engagement (Version
-  draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/001051/draft
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: Mus musculus - House mouse
+    schemaKey: SpeciesType
+  variableMeasured:
+  - Units
+  - ProcessingModule
+  - LFP
+  - ElectricalSeries
+citation: Bennett, Corbett; Sridhar, Arjun (2024) Large-scale Neuropixels recordings
+  through SHIELD implant during visual change detection task with dynamic gating of
+  engagement (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/001051/draft
 contributor:
 - affiliation: []
   email: corbennett@gmail.com
@@ -20,6 +46,9 @@ contributor:
   name: Bennett, Corbett
   roleName:
   - dcite:ContactPerson
+  schemaKey: Person
+- includeInCitation: true
+  name: Sridhar, Arjun
   schemaKey: Person
 dateCreated: '2024-06-05T21:28:46.759168+00:00'
 description: "This dataset was collected at the Allen Institute. It includes data
