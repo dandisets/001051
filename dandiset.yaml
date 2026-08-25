@@ -39,7 +39,7 @@ assetsSummary:
   - ElectricalSeries
 citation: Bennett, Corbett; Sridhar, Arjun (2026) Large-scale Neuropixels recordings
   through SHIELD implant during visual change detection task with dynamic gating of
-  engagement (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001051/draft
+  engagement (Version 0.260825.2232) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.001051/0.260825.2232
 contributor:
 - affiliation: []
   email: corbennett@gmail.com
@@ -52,6 +52,7 @@ contributor:
   name: Sridhar, Arjun
   schemaKey: Person
 dateCreated: '2024-06-05T21:28:46.759168+00:00'
+datePublished: '2026-08-25T22:32:58.015116+00:00'
 description: "This dataset was collected at the Allen Institute. It includes data
   from 99 electrophysiology sessions featuring multi-Neuropixel recordings throughout
   the left hemisphere while mice performed a visual change detection task. This dataset
@@ -87,22 +88,36 @@ description: "This dataset was collected at the Allen Institute. It includes dat
   Visual Behavior Neuropixels dataset here: https://portal.brain-map.org/circuits-behavior/visual-behavior-neuropixels\n
   \nThis dataset was used in the following preprint: \nSHIELD: Skull-shaped hemispheric
   implants enabling large-scale-electrophysiology datasets in the mouse brain [https://doi.org/10.1101/2023.11.12.566771]"
+doi: 10.48324/dandi.001051/0.260825.2232
 ethicsApproval: []
-id: DANDI:001051/draft
+id: DANDI:001051/0.260825.2232
 identifier: DANDI:001051
 keywords: []
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
-- https://api.dandiarchive.org/api/dandisets/001051/versions/draft/assets/
+- https://dandiarchive.s3.amazonaws.com/dandisets/001051/0.260825.2232/assets.yaml
 name: Large-scale Neuropixels recordings through SHIELD implant during visual change
   detection task with dynamic gating of engagement
 protocol: []
+publishedBy:
+  endDate: '2026-08-25T22:32:58.015116+00:00'
+  id: urn:uuid:32e014ce-9aa3-47f7-b9c6-cf9f2d497f32
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2026-08-25T22:32:58.015116+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:c3b8781e-1029-4487-b534-6855f29bf756
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
 relatedResource: []
+releaseNotes: release - 08/25/2026
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.6.7
 studyTarget: []
-url: https://dandiarchive.org/dandiset/001051/draft
-version: draft
+url: https://dandiarchive.org/dandiset/001051/0.260825.2232
+version: 0.260825.2232
 wasGeneratedBy: []
