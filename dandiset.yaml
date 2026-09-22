@@ -3,7 +3,31 @@
 # and obtained from the dandiarchive.
 '@context': 
   https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.7/context.json
-about: []
+about:
+- identifier: https://purl.brain-bican.org/ontology/mbao/MBA_669
+  name: Visual areas
+  schemaKey: Anatomy
+- identifier: https://purl.brain-bican.org/ontology/mbao/MBA_477
+  name: Striatum
+  schemaKey: Anatomy
+- identifier: https://www.cognitiveatlas.org/concept/id/trm_4a3fd79d0b46f
+  name: visual attention
+  schemaKey: GenericType
+- identifier: http://purl.obolibrary.org/obo/UBERON_0001870
+  name: frontal cortex
+  schemaKey: Anatomy
+- identifier: http://purl.obolibrary.org/obo/UBERON_4450000
+  name: medial prefrontal cortex
+  schemaKey: Anatomy
+- identifier: http://purl.obolibrary.org/obo/UBERON_0002421
+  name: hippocampal formation
+  schemaKey: Anatomy
+- identifier: http://purl.obolibrary.org/obo/UBERON_0001891
+  name: midbrain
+  schemaKey: Anatomy
+- identifier: https://purl.brain-bican.org/ontology/mbao/MBA_549
+  name: Thalamus
+  schemaKey: Anatomy
 access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
@@ -41,16 +65,33 @@ citation: Bennett, Corbett; Sridhar, Arjun (2026) Large-scale Neuropixels record
   through SHIELD implant during visual change detection task with dynamic gating of
   engagement (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001051/draft
 contributor:
-- affiliation: []
+- affiliation:
+  - identifier: https://ror.org/03cpe7c52
+    name: Allen Institute
+    schemaKey: Affiliation
   email: corbennett@gmail.com
+  identifier: 0009-0001-2847-7754
   includeInCitation: true
   name: Bennett, Corbett
   roleName:
   - dcite:ContactPerson
+  - dcite:Author
   schemaKey: Person
-- includeInCitation: true
+- affiliation:
+  - identifier: https://ror.org/03cpe7c52
+    name: Allen Institute
+    schemaKey: Affiliation
+  identifier: 0009-0000-9152-9863
+  includeInCitation: true
   name: Sridhar, Arjun
+  roleName:
+  - dcite:Author
   schemaKey: Person
+- identifier: https://ror.org/03cpe7c52
+  name: Allen Institute
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
 dateCreated: '2024-06-05T21:28:46.759168+00:00'
 description: "This dataset was collected at the Allen Institute. It includes data
   from 99 electrophysiology sessions featuring multi-Neuropixel recordings throughout
@@ -90,7 +131,11 @@ description: "This dataset was collected at the Allen Institute. It includes dat
 ethicsApproval: []
 id: DANDI:001051/draft
 identifier: DANDI:001051
-keywords: []
+keywords:
+- Neuropixels
+- visual change detection
+- task engagement
+- SHIELD implant
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
@@ -98,7 +143,15 @@ manifestLocation:
 name: Large-scale Neuropixels recordings through SHIELD implant during visual change
   detection task with dynamic gating of engagement
 protocol: []
-relatedResource: []
+relatedResource:
+- identifier: doi:10.1016/j.neuron.2024.06.015
+  name: 'SHIELD: Skull-shaped hemispheric implants enabling large-scale electrophysiology
+    datasets in the mouse brain'
+  relation: dcite:IsDescribedBy
+  repository: Neuron
+  resourceType: dcite:JournalArticle
+  schemaKey: Resource
+  url: https://doi.org/10.1016/j.neuron.2024.06.015
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.6.7
